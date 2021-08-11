@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SOPHOS Labs Intelix Lookup</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  </head>
+  <body>
+  <section class="section">
+    <div class="container">
+      <h1 class="title">
+        Intelix Response
+      </h1>
+      {%if response.type %}
+      <div class="columns">
+        <div class="column is-2">Lookup Type:</div>
+        <div class="column is-2">{{response.type}}</div>
+      </div>
+      {% endif %}
+      {% if response.reputationScore %}
+      <div class="columns">
+        <div class="column is-2">Reputation Score:</div>
+        <div class="column is-2">{{response.reputationScore}}</div>
+      </div>
+      {% endif %}
+      {% if response.fileReputation %}
+      <div class="columns">
+        <div class="column is-2">File Reputation:</div>
+        <div class="column is-2">{{response.fileReputation}}</div>
+      </div>
+      {% endif %}
+      {% if response.category %}
+      <div class="columns">
+        <div class="column is-2">Category:</div>
+        <div class="column is-2">{{response.category}}</div>
+      </div>
+      {% endif %}
+      {% if response.ttl %}
+      <div class="columns">
+        <div class="column is-2">TTL:</div>
+        <div class="column is-2">{{response.ttl}}</div>
+      </div>
+      {% endif %}
+      {%if response.correlationId %}
+      <div class="columns">
+        <div class="column is-2">Intelix CorrelationID:</div>
+        <div class="column is-2">{{response.correlationId}}</div>
+      </div>
+      {% endif %}
+      {%if response.requestId %}
+      <div class="columns">
+        <div class="column is-2">Intelix RequestId:</div>
+        <div class="column is-4">{{response.requestId}}</div>
+      </div>
+      {% endif %}
+      {%if response.error %}
+      <div class="columns">
+        <div class="column is-2">Error:</div>
+        <div class="column is-4">{{response.error}}</div>
+      </div>
+      {% endif %}
+    </div>
+  </section>
+  </body>
+</html>
