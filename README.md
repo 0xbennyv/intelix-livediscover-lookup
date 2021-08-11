@@ -1,4 +1,4 @@
-# Sophos Labs live discover enrichment.
+# Sophos Labs Intelix/Central Live Discover Enrichment.
 The ability to add custom enrichment has been added to Sophos Central Threat Analysis Center (EDR/XDR) to lookup IP Addresses and File Hashes with Live Discovery. This tool has been written as an example for basic integration with Sophos Labs [Intelix](https://api.labs.sophos.com/doc/index.html#overview).
 
 ## Deployment
