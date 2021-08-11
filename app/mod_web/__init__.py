@@ -5,7 +5,7 @@ from flask import Blueprint, render_template, request, redirect, url_for
 mod_web = Blueprint('web', __name__, url_prefix='/')
 @mod_web.route("/")
 def index():
-    return f"<p>Setup Sophos Live discover to point to https://{request.base_url}lookup/<ioc></p>"
+    return f"<p> Setup Sophos Live discover to point to {request.base_url}lookup/ioc </p>"
 
 @mod_web.route("lookup/")
 def lookup():
@@ -18,4 +18,3 @@ def ioc(ioc):
         return r
     else:
         return redirect(url_for('web.index'))
-
