@@ -2,13 +2,14 @@
 The ability to add custom enrichment has been added to Sophos Central Threat Analysis Center (EDR/XDR) to lookup IP Addresses and File Hashes with Live Discovery. This tool has been written as an example for basic integration with Sophos Labs [Intelix](https://api.labs.sophos.com/doc/index.html#overview).
 
 ## Deployment
-This can be ran locally with run.py the intelix Client Id and Client Secret added to .env, the mandatory environment variables are:
+This can be ran locally with run.py. 
+The Sophos Labs Intelix Client ID and Client Secret need to be added to .env, the mandatory environment variables are:
 
 INTELIX_CLIENT_ID=
 
 INTELIX_CLIENT_SECRET=
 
-# The other easy solution to self host is using Heroku. #
+# The easiest solution to self host is using Heroku. #
 1. Fork this repository.
 2. Create a new application in Heroku.
 3. In Heroku under 'deploy' connect GitHub and give it access to the forked repository.
