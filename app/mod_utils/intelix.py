@@ -31,6 +31,8 @@ def intelixlookup(ioc):
                 response['fileReputation'] = 'Known good'
         if 'detectionName' in j:
             response['detectionName'] = j['detectionName']
+        
+        response['type'] = 'File Hash'
 
     # IP reponses
     if validators.ipv4(ioc):
@@ -41,6 +43,8 @@ def intelixlookup(ioc):
 
         if 'ttl' in j:
             response['ttl'] = j['ttl']
+
+        response['type'] = 'IP Address'
 
     # Generic consistent repsponses
     if 'correlationId' in j:
