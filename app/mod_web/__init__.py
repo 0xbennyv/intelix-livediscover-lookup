@@ -1,6 +1,6 @@
 import validators
 from app.mod_utils.intelix import intelixlookup
-from flask import Blueprint, render_template, request, redirect, url_for
+from flask import Blueprint, request, redirect, url_for
 
 mod_web = Blueprint('web', __name__, url_prefix='/')
 @mod_web.route("/")
