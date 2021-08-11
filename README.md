@@ -9,7 +9,7 @@ INTELIX_CLIENT_ID=
 
 INTELIX_CLIENT_SECRET=
 
-# The easiest solution to self host is using Heroku. #
+# Self host is using Heroku. #
 1. Fork this repository.
 2. Create a new application in Heroku.
 3. In Heroku under 'deploy' connect GitHub and give it access to the forked repository.
